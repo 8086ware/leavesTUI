@@ -6,7 +6,7 @@ char inChL() {
 #else
 	char byteread = 0;
 	
-	if(fread(&byteread, sizeof(char), 1, stdin) < 1) return 0;
+	if(fread(&byteread, sizeof(char), 1, stdin) < 1) return FAILURE;
 	
 	return byteread;
 #endif
